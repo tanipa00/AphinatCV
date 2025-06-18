@@ -1,1 +1,205 @@
 # AphinatCV
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Removed Google Fonts: Inter as Arial/Georgia are system fonts -->
+    <style>
+        body {
+            font-family: Georgia, serif; /* Changed to Georgia */
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .container-resume {
+            max-width: 800px;
+            /* position: relative; No longer strictly needed for image positioning, but kept for general layout */
+        }
+        h1, h2, h3 {
+            color: #1f2937; /* Darker gray for headings */
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb; /* Light gray border for sections */
+        }
+        .rounded-lg {
+            border-radius: 0.5rem; /* Standard rounded corners */
+        }
+        /* Custom styles for print, if needed (optional) */
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .container-resume {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        /* Style for the profile image - now inline with header flow */
+        .profile-img-centered {
+            display: block; /* Make it a block element to center */
+            margin: 0 auto 1rem auto; /* Center horizontally, add bottom margin */
+            width: 100px; /* Fixed width for the image */
+            height: 100px; /* Fixed height for the image */
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border: 2px solid #cbd5e1; /* Light border around the image */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+        /* Removed .header-with-image as it's no longer necessary */
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="container-resume mx-auto bg-white p-6 md:p-8 shadow-lg rounded-lg">
+
+        <!-- Header Section: Name and Contact Information -->
+        <header class="text-center mb-8 pb-4 border-b-2 border-gray-200">
+            <!-- Profile Image - Now placed above the name and centered -->
+            <!--
+                Note: While this Dropbox link includes '?raw=1', Dropbox links can sometimes still be
+                unreliable for direct embedding due to their security features or if the link expires.
+                If the image does not appear, consider using a dedicated image hosting service (e.g., Imgur)
+                or hosting the image locally with your HTML file (e.g., src="your_profile_photo.jpg").
+            -->
+            <img src="https://www.dropbox.com/scl/fi/3w00z98bry6maq80fv04c/IMG_4245.JPG?raw=1&rlkey=l4fzcei7m3fzovtsxqncezfzt&e=1&st=xadmc407"
+                 alt="Your Profile Picture"
+                 class="profile-img-centered"
+                 onerror="this.onerror=null;this.src='https://placehold.co/100x100/FF0000/FFFFFF?text=Error';">
+
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">
+                Aphinat Boonjua
+            </h1>
+            <p class="text-lg text-gray-600">
+                Tel: +66918716576 | Email: bj.apinut@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/aphinat-boonjua-1526602a8" target="_blank" class="text-pink-400 hover:text-pink-500 hover:underline">Aphinat Boonjua</a>
+            </p>
+        </header>
+
+        <!-- Professional Summary Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-title pb-2 mb-4">
+                Professional Summary
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                Highly analytical and multilingual professional (Thai, English C1, Japanese C1) with a strong academic background and international exchange experience. Leveraging a background in detailed interpretation and communication, now excelling as a Master Data & Support Officer. Focused on ensuring data integrity, operational efficiency, and precise information flow through meticulous attention to detail and strong organizational skills. Proficient in MS Office and Google Workspace.
+            </p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-title pb-2 mb-4">
+                Work Experience
+            </h2>
+
+            <!-- Job Entry 1: Master Data & Support Officer -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Master Data & Support Officer, Futurelog Asia Pacific Ltd.</h3>
+                    <span class="text-gray-500 text-sm">July 2025 – Present</span>
+                </div>
+                <p class="text-gray-600 italic mb-2">Bangkok, Thailand</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                    <li>Maintains data integrity and accuracy within core systems while optimizing data flow and processes to ensure operational efficiency.</li>
+                    <li>Ensures precise information management through meticulous attention to detail and provides support to internal teams for data-related inquiries and system usage.</li>
+                </ul>
+            </div>
+
+            <!-- Job Entry 2: Interpreter -->
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Interpreter, PASCO (Thailand)</h3>
+                    <span class="text-500 text-sm">March 2024 – July 2025</span>
+                </div>
+                <p class="text-gray-600 italic mb-2">Bangkok, Thailand</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                    <li>Translated daily documents and weekly meetings (e.g., presentation slides, survey questions, work progress meetings).</li>
+                    <li>Translated in external meetings with customers and government agencies (e.g., AI utilization on crop field detection from satellite images with Land Development Department under Ministry of Agricultural and Cooperative, project funded by MEXT-SX).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-title pb-2 mb-4">
+                Education
+            </h2>
+            <!-- Education Entry 1 -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Bachelor of Arts (Japanese), Kasetsart University</h3>
+                    <span class="text-gray-500 text-sm">2019 – 2024</span>
+                </div>
+                <p class="text-gray-600 italic">Second Degree Honor (GPA: 3.47)</p>
+            </div>
+
+            <!-- Education Entry 2 -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-xl font-semibold text-gray-800">Exchange Study, Shinshu University</h3>
+                    <span class="text-gray-500 text-sm">2022 – 2023 (2 academic terms)</span>
+                </div>
+                <p class="text-gray-600 italic">Funded by JASSO</p>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 section-title pb-2 mb-4">
+                Activities
+            </h2>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                <li>
+                    <strong>TED-Ed Educational Video Volunteer Translator</strong>:
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4"> <!-- Added pl-4 for deeper indentation -->
+                        <li><a href="https://www.youtube.com/watch?v=Qytj-DbXMKQ" target="_blank" class="text-pink-400 hover:text-pink-500 hover:underline">How Thor got his hammer - Scott A. Mellor</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=nLgt4Z5L8XI" target="_blank" class="text-pink-400 hover:text-pink-500 hover:underline">The plot to overthrow the Inca Empire - Gabriel Prietow</a></li>
+                    </ul>
+                </li>
+                <li><strong>Private Tutoring</strong>: Occasionally provided private Japanese lessons.</li>
+            </ul>
+        </section>
+
+        <!-- Key Skills Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-title pb-2 mb-4">
+                Key Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-700">
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-1">Languages:</h3>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Thai</strong>: Mastered</li>
+                        <li><strong>English</strong>: C1 (TOEIC score 835)</li>
+                        <li><strong>Japanese</strong>: C1 (JLPT N2)</li>
+                        <li><strong>French</strong>: A2</li>
+                        <li><strong>Chinese</strong>: A1</li>
+                        <li><strong>Classical Latin</strong>: Beginner</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-1">Computer Skills:</h3>
+                    <ul class="list-disc list-inside">
+                        <li><strong>MS Word</strong>: Advanced</li>
+                        <li><strong>MS PowerPoint</strong>: Moderate</li>
+                        <li><strong>Excel</strong>: Moderate</li>
+                        <li><strong>Google Docs/Sheets</strong>: Moderate</li>
+                        <li><strong>Canva</strong>: Moderate</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-1">Certifications & Licenses:</h3>
+                    <ul class="list-disc list-inside">
+                        <li><a href="https://courses.edx.org/certificates/576636e9ac2d46d885db0cbd0f934861?_gl=1*wk7n5c*_gcl_aw*R0NMLjE3NDc5MDY2MDQuQzowS0NRandscnZCQmhEbkFSSXNBSEVRZ09SUEY3a2ZjSUF5TjM1b19Zd3AzTDhQUHBUUmo4THU2WWNjLWNvR0FESWJPNGpZZERMSmRKTWFBallYRUFMd193Y0I.*_gcl_au*MTc2NTQ3NzIxOS4xNzQ4Mzk4ODI1*_ga*MjAxNjIxOTQwOC4xNzQ3ODk4NjA5*_ga_D3KS4KMDT0*czE3NTAxMjk2MDAkbzQkZzEkdDE3NTAxMjk2MTYkajQ0JGwwJGgw" target="_blank" class="text-pink-400 hover:text-pink-500 hover:underline">SW38: Pyramids of Giza: Ancient Egyptian Art and Archaeology</a></li>
+                        <li>Motorcycle License (Thailand) acquired April 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
